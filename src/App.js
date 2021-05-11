@@ -1,11 +1,14 @@
 import React from "react";
-import { Button } from "@chakra-ui/react";
+import { Router } from "@reach/router";
+import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
 
 const App = () => {
   return (
-    <div>
-      <Button colorScheme="green">Working</Button>
-    </div>
+    <Router>
+      <Home path="/" />
+      <Dashboard path="/dashboard" />
+    </Router>
   );
 };
 
